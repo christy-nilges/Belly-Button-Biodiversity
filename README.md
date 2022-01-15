@@ -10,4 +10,5 @@ The dashboard can be accessed from the link https://christy-nilges.github.io/Bel
 
 ## Dashboard
 
-![image](https://user-images.githubusercontent.com/88639467/149629683-9bb0b812-b741-4727-856b-278801da65d0.png)
+![image](https://user-images.githubusercontent.com/88639467/149630380-c0614aa8-9dce-481d-873b-60728d48627c.png)
+
