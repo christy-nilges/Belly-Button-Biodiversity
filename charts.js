@@ -76,6 +76,7 @@ function buildCharts(sample) {
     var yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
    
     // 8. Create the trace for the bar chart. 
+    var colors = ['#fff100', '#ff8c00', '#e81123', '#ec008c', '#68217a', '#00188f', '#00bcf2', '#00b294', '#009e49', '#bad80a']
     var barData = [
           {
           y: yticks,
@@ -83,7 +84,11 @@ function buildCharts(sample) {
           text: otu_labels.slice(0, 10).reverse(),
           type: "bar",
           orientation: "h",
-          }
+          mode: 'markers',
+            marker: {
+                color: colors
+            }
+                    }
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
@@ -104,7 +109,7 @@ function buildCharts(sample) {
     marker: {
       size: sample_values,
       color: otu_ids,
-      colorscale: "Earth"
+      colorscale: "Jet"
      }
   }];
   
